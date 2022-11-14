@@ -8,9 +8,8 @@ body{
 }
 .card-parent{
     display: flex;
- justify-content: start;
+ justify-content: space-around;
     flex-direction: column;
-    
 
 }
 #cardChild{
