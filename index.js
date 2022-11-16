@@ -25,9 +25,9 @@ console.log(DOMselectors.value);
 
 DOMselectors.formA.addEventListener("submit", function (event) {
   event.preventDefault();
-
   let input = DOMselectors.value;
-  let response = {};
-  response.name = (0).value;
-  response.home = (1).value;
+  console.log(input);
+  let Card = {};
+  Card.input = input;
+  console.log(Card);
 });
