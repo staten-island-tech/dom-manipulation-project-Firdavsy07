@@ -1,18 +1,23 @@
 const DOMselectors = {
   formA: document.getElementById("form-example"),
   value: document.querySelectorAll("#inputA"),
-  text: document.querySelector("#cardChild"),
-  box: document.querySelector("#cardChild"),
+  submit: document.getElementById("inputB"),
+  box: document.querySelectorAll("#cardChild"),
   grab: document.querySelectorAll(".form-example"),
   button: document.getElementById("btn"),
+  value1: document.querySelector(".input1"),
+  value2: document.querySelector(".input2"),
+  value3: document.querySelector(".input3"),
 };
 
+console.log(DOMselectors.submit);
 console.log(DOMselectors.formA);
 console.log(DOMselectors.box);
 console.log(DOMselectors.grab);
-console.log(DOMselectors.text);
 console.log(DOMselectors.button);
-console.log(DOMselectors.value);
+console.log(DOMselectors.value1);
+console.log(DOMselectors.value2);
+console.log(DOMselectors.value3);
 //function backgroundAndText(background, text) {
 // background.style.backgroundColor = "Red";//
 //text.innerHTML = "Amogus";//
@@ -25,9 +30,9 @@ console.log(DOMselectors.value);
 
 DOMselectors.formA.addEventListener("submit", function (event) {
   event.preventDefault();
-  let input = DOMselectors.value;
+  let input = DOMselectors.boxd.value;
   console.log(input);
-  let Card = {};
-  Card.input = input;
-  console.log(Card);
+  let info = {};
+  info.input = input;
+  console.log(info);
 });
