@@ -1,6 +1,6 @@
 const DOMselectors = {
   formA: document.getElementById("form-example"),
-  value: document.querySelectorAll("#inputA"),
+  input: document.querySelectorAll("#inputA"),
   submit: document.getElementById("inputB"),
   box: document.querySelectorAll("#cardChild"),
   grab: document.querySelectorAll(".form-example"),
@@ -10,14 +10,6 @@ const DOMselectors = {
   value3: document.querySelector(".input3"),
 };
 
-console.log(DOMselectors.submit);
-console.log(DOMselectors.formA);
-console.log(DOMselectors.box);
-console.log(DOMselectors.grab);
-console.log(DOMselectors.button);
-console.log(DOMselectors.value1);
-console.log(DOMselectors.value2);
-console.log(DOMselectors.value3);
 //function backgroundAndText(background, text) {
 // background.style.backgroundColor = "Red";//
 //text.innerHTML = "Amogus";//
@@ -30,9 +22,19 @@ console.log(DOMselectors.value3);
 
 DOMselectors.formA.addEventListener("submit", function (event) {
   event.preventDefault();
-  let input = DOMselectors.boxd.value;
-  console.log(input);
+  let name = DOMselectors.value1.value;
+  console.log(name);
   let info = {};
-  info.input = input;
+  info.name = name;
+  console.log(info);
+
+  let address = DOMselectors.value2.value;
+  console.log(address);
+  info.address = address;
+  console.log(info);
+
+  let hobby = DOMselectors.value3.value;
+  console.log(hobby);
+  info.hobby = hobby;
   console.log(info);
 });
