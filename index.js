@@ -3,6 +3,7 @@ const DOMselectors = {
   input: document.querySelectorAll("#inputA"),
   submit: document.getElementById("inputB"),
   box: document.querySelectorAll("#cardChild"),
+  container: document.getElementById("cardChild"),
   grab: document.querySelectorAll(".form-example"),
   button: document.getElementById("btn"),
   value1: document.querySelector(".input1"),
@@ -22,19 +23,23 @@ const DOMselectors = {
 
 DOMselectors.formA.addEventListener("submit", function (event) {
   event.preventDefault();
-  let name = DOMselectors.value1.value;
+  const name = DOMselectors.value1.value;
   console.log(name);
-  let info = {};
+  const info = {};
   info.name = name;
   console.log(info);
 
-  let address = DOMselectors.value2.value;
+  const address = DOMselectors.value2.value;
   console.log(address);
   info.address = address;
   console.log(info);
 
-  let hobby = DOMselectors.value3.value;
+  const hobby = DOMselectors.value3.value;
   console.log(hobby);
   info.hobby = hobby;
   console.log(info);
+
+  DOMselectors.container.insertAdjacentHTML("afterend", ${name});
+  DOMselectors.container.insertAdjacentHTML("afterend", "");
+  DOMselectors.container.insertAdjacentHTML("afterend", "");
 });
