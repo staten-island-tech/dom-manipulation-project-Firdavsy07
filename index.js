@@ -11,16 +11,6 @@ const DOMselectors = {
   value3: document.querySelector(".input3"),
 };
 
-//function backgroundAndText(background, text) {
-// background.style.backgroundColor = "Red";//
-//text.innerHTML = "Amogus";//
-//}//
-
-//DOMselectors.button.addEventListener("click", function (event) {
-// event.preventDefault();//
-// backgroundAndText(DOMselectors.box, DOMselectors.text);//
-//});//
-
 DOMselectors.formA.addEventListener("submit", function (event) {
   event.preventDefault();
   const name = DOMselectors.value1.value;
@@ -39,7 +29,8 @@ DOMselectors.formA.addEventListener("submit", function (event) {
   info.hobby = hobby;
   console.log(info);
 
-  DOMselectors.container.insertAdjacentHTML("afterend", ${name});
-  DOMselectors.container.insertAdjacentHTML("afterend", "");
-  DOMselectors.container.insertAdjacentHTML("afterend", "");
+  DOMselectors.container.insertAdjacentHTML(
+    "afterend",
+    `<div id="cardChild"><p>${name}</p><p>${address}</p> <p>${hobby}</p></div>`
+  );
 });
