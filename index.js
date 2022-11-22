@@ -9,6 +9,7 @@ const DOMselectors = {
   value1: document.querySelector(".input1"),
   value2: document.querySelector(".input2"),
   value3: document.querySelector(".input3"),
+  formB: document.getElementById("formB"),
 };
 
 DOMselectors.formA.addEventListener("submit", function (event) {
@@ -35,7 +36,14 @@ DOMselectors.formA.addEventListener("submit", function (event) {
     <p>${name}</p>
     <p>${address}</p> 
     <p>${hobby}</p>
+    <form id="formB">
     <button id="btn">Erase Me</button></div>
+    </form>
     `
   );
+});
+DOMselectors.button.addEventListener("click", function (event) {
+  event.preventDefault();
+  const remove = document.getElementById("cardGrandChild");
+  remove.remove();
 });
