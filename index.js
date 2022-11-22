@@ -31,6 +31,11 @@ DOMselectors.formA.addEventListener("submit", function (event) {
 
   DOMselectors.container.insertAdjacentHTML(
     "afterend",
-    `<div id="cardChild"><p>${name}</p><p>${address}</p> <p>${hobby}</p></div>`
+    `<div id="cardGrandChild">
+    <p>${name}</p>
+    <p>${address}</p> 
+    <p>${hobby}</p>
+    <button id="btn">Erase Me</button></div>
+    `
   );
 });

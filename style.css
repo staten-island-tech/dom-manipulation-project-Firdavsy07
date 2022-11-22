@@ -29,3 +29,20 @@ body{
 
 }
 
+#cardGrandChild{
+    right: auto;
+    color: white;
+    background-color: rgb(23, 26, 33);
+    align-items: center;
+    text-align: center;
+    border: white solid 1px;
+    border-width: 3px;
+    padding: 3px;
+    border-radius: 5px;
+    margin: 2% ;
+    height: 20rem;
+    width: 15rem;
+    box-shadow: 1rem 1rem 1rem grey;
+
+}
+
