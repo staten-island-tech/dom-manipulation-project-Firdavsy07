@@ -32,8 +32,8 @@ function create() {
 
 function erase() {
   let remove = document.querySelectorAll(".btn");
-  remove.forEach((eachRemove) => {
-    eachRemove.addEventListener("click", (event) => {
+  remove.forEach((button) => {
+    button.addEventListener("click", (event) => {
       event.target.parentElement.remove();
     });
   });
